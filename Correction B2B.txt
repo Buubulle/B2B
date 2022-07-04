@@ -1,0 +1,43 @@
+Correction Born2Beroot
+
+
+chage -l "pour verifier qu'il ont bien change les droit pour les utilisateur deja cree"
+
+
+
+Etape commande;
+
+Session Admin sudo; "su -"
+Cree un user; "sudo adduser username"
+Supprimer un user; "sudo userdel username"
+
+
+Check les partition des disque; "lsblk"
+Group de l'user; "getent group user"
+Group de l'user42; "getent group user42"
+
+Scrip /bin/monitoring
+
+Supprimer un port "sudo ufw delete 1 ou 2"
+
+Sudo status; "dpkg -l | grep sudo"
+AppArmor status; "sudo aa-status"
+SSH status; "sudo service ssh status"
+UFW status; "sudo uff status"
+
+Fichier de configuation sudo; "vim /etc/sudoers.d/"
+Fichier de paramètre MDP expiration; "vim /etc/login.defs"
+Fichier de paramètre MDP générale; "vim /etc/pam.d/common-password"
+Fichier de configuration crontab; "sudo crontab -l"
+Cd sc	
+Renommer la machine; "nano /etc/hostname"
+
+Verifier que ssh utilise le port 4242; "sudo vi /etc/ssh/sshd_config"
+
+
+Bonus;
+
+Partition des disque: "lsblk" 2 points
+Installation service fail2ban ahi permet deblacklist une adress ip si il y as trop d'erreur de connection "sudo service fail2ban" status
+
+
